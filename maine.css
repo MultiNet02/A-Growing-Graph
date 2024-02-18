@@ -1,316 +1,226 @@
-body
-{
+body {
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    background: rgb(240, 247, 253);
 }
 
-.titl
-{
+.titl {
     padding-top: 0;
-    margin-top: 0.7rem;
-    font-size: 1.9em;
-    font-family: sans-serif;
-    position: absolute;
+    margin-top: 1.5rem;
+    font-size: 2em;
+    position: relative;
     font-weight: normal;
     left: 8rem;
+    color: rgb(255, 255, 255);
 }
 
-#root
-{
+div#root {
     padding: 0;
     margin: 0;
-    position: absolute;
+    padding-right: calc(24vw + 2em);
+    position: relative;
 }
 
-.smol
-{
+.smol {
     font-size: 0.45em;
+    color: rgb(218, 218, 218);
 }
 
-.madeby
-{
-    position: absolute;
-    right: 0;
-    top: 60em;
+.madeby {
+    position: relative;
+    left: 32;
+    bottom: 16;
     margin: 0;
     padding: 0;
+    color:rgb(80, 80, 80)
 }
 
-.svgConns
-{
+.svgConns {
     position: absolute;
 }
 
-.classBox
-{
+.classBox {
     width: 12em;
-    height: 4.5em;
-    font-family: sans-serif;
+    height: 5em;
     text-align: center;
-    border-radius: 12px;
+    border-radius: 0.5em;
     position: absolute;
+    box-shadow: 0 10px 16px 3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms ease;
 }
 
-.eecs
-{
+/* the two styles of color coding for the boxes */
+
+/* by department */
+
+div#root[colorcode="dept"] .eecs {
+    /*border-color: #ffffff;*/
+    border: 2px solid #7f00d4;
+    background-color: #f1dbff;
+}
+
+div#root[colorcode="dept"] .math {
+    border: 2px solid #00a2c2;
+    background-color: #dcf9ff;
+}
+
+/* by level */
+
+div#root[colorcode="level"] .yl-1 {
     border-style: solid;
-    border-color: #c675ff;
+    border-color: #d6d603;
     border-width: 2px;
-    background-color: #e7c4ff;
+    background-color: #ffffce;
 }
 
-.math
-{
+div#root[colorcode="level"] .yl-2 {
     border-style: solid;
-    border-color: #23c4ff;
+    border-color: #417e0c;
     border-width: 2px;
-    background-color: #b2f2ff;
+    background-color: #e2ffc8;
 }
 
-#eecs1001{
-    left: 16em;
-    top: 4em;
+div#root[colorcode="level"] .yl-3 {
+    border-style: solid;
+    border-color: #1f5781;
+    border-width: 2px;
+    background-color: #e2f2ff;
 }
 
-#eecs1012
-{
-    left: 2em;
-    top: 4em;
+div#root[colorcode="level"] .yl-4 {
+    border-style: solid;
+    border-color: #7852e9;
+    border-width: 2px;
+    background-color: #f1ebff;
 }
 
-#eecs1022
-{
-    left: 2em;
-    top: 10em;
+/* the explaination (description) section */
+
+div#explain {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 21.5vw;
+    height: 50vh;
+    border: 1px solid #c4c4c4;
+    background-color: rgb(39, 45, 51);
+    border-radius: 0.5em;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    overflow-y: scroll;
+    box-shadow: 0 10px 16px 3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
 }
 
-
-#math1300
-{
-    left: 58em;
-    top: 4em;
+div#explain-topp {
+    padding: 0.6em 0;
+    font-size: 1.15em;
+    text-align: center;
+    font-weight: 900;
+    color: white;
 }
 
-#math1310
-{
-    left: 58em;
-    top: 10em;
+div#explain-desc {
+    padding: 0.4em 1em;
+    color: rgb(218, 218, 218);
 }
 
-#math1019
-{
-    left: 30em;
-    top: 4em;
+div#explain-prereq-list-div {
+    padding: 0.4em 1em;
+   color: white;
 }
 
-#math1025
-{
-    left: 72em;
-    top: 4em;
+div#explain-hint {
+    text-align: center;
+    font-size: 1.6em;
+    color: #ffffff;
 }
 
+/* the top right settings section */
 
-#eecs2031
-{
-    left: 2em;
-    top: 16em;
+div#settings-bar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    text-align: right;
+    padding: 1rem;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6px;
+    margin-right: 16px;
 }
 
-#eecs2021
-{
-    left: 16em;
-    top: 16em;
+/* the button to switch between color code */
+
+button#switch-color-code {
+    font-size: 1.2em;
+    background-color: rgb(39, 45, 51);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5em;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 24px;
+    transition: all 750ms ease-out;
+    border: none;
+    cursor: pointer;
 }
 
-#eecs2030
-{
-    left: 30em;
-    top: 16em;
+button#switch-color-code:hover {
+    background-color: rgb(181, 200, 219);
+    color: rgb(34, 34, 34);
 }
 
-#eecs2001
-{
-    left: 44em;
-    top: 16em;
+button#switch-color-code:active {
+    background-color: #555;
+    border-color: #555;
 }
 
-#eecs2011
-{
-    left: 30em;
-    top: 22em;
+/* the size/zoom slide bar */
+
+div#zoom-size-div {
+    font-size: 1.2em;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 1.1rem 2rem;
+    /* border: 2px solid white; */
+    border-radius: 0.5em;
+    background: rgb(39, 45, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1em;
 }
 
-#math1090
-{
-    left: 44em;
-    top: 22em;
+#zoom-range-slider {
+    width: 14em;
+    margin-left: 16px;
 }
 
-#math2015
-{
-    left: 58em;
-    top: 16em;
+.course-code-full {
+    font-weight: 900;
 }
 
-#math2271
-{
-    left: 72em;
-    top: 22em;
+.wide-bg-colour{
+    text-align: left;
+    background-color: rgb(59, 70, 78);
+    display: block;
+    padding: 4px;
+    margin-bottom: 56px;
 }
 
-#math2030
-{
-    left: 58em;
-    top: 22em;
-}
-
-
-#eecs3000
-{
-    left: 2em;
-    top: 28em;
-}
-
-#eecs3101
-{
-    left: 16em;
-    top: 28em;
-}
-
-#eecs3311
-{
-    left: 30em;
-    top: 28em;
-}
-
-#eecs3215
-{
-    left: 2em;
-    top: 34em;
-}
-
-#eecs3221
-{
-    left: 16em;
-    top: 34em;
-}
-
-#eecs3401
-{
-    left: 30em;
-    top: 34em;
-}
-
-#eecs3421
-{
-    left: 44em;
-    top: 34em;
-}
-
-#eecs3431
-{
-    left: 58em;
-    top: 34em;
-}
-
-#eecs3461
-{
-    left: 72em;
-    top: 34em;
-}
-
-#eecs4101
-{
-    left: 2em;
-    top: 40em;
-}
-
-#eecs4115
-{
-    left: 16em;
-    top: 40em;
-}
-
-#eecs4141
-{
-    left: 30em;
-    top: 40em;
-}
-
-#eecs4161
-{
-    left: 44em;
-    top: 40em;
-}
-
-#eecs4201
-{
-    left: 58em;
-    top: 40em;
-}
-
-#eecs4215
-{
-    left: 2em;
-    top: 46em;
-}
-
-#eecs4401
-{
-    left: 16em;
-    top: 46em;
-}
-
-#eecs4404
-{
-    left: 30em;
-    top: 46em;
-}
-
-#eecs4412
-{
-    left: 44em;
-    top: 46em;
-}
-
-#eecs4413
-{
-    left: 58em;
-    top: 46em;
-}
-
-#eecs4414
-{
-    left: 2em;
-    top: 52em;
-}
-
-#eecs4415
-{
-    left: 16em;
-    top: 52em;
-}
-
-#eecs4422
-{
-    left: 30em;
-    top: 52em;
-}
-
-#eecs4441
-{
-    left: 44em;
-    top: 52em;
-}
-
-#eecs4443
-{
-    left: 58em;
-    top: 52em;
-}
-
-#eecs4471
-{
-    left: 72em;
-    top: 52em;
+#zoom-value{
+    margin-left: 12px;
 }
