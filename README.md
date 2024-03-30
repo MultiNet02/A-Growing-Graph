@@ -1,5 +1,11 @@
 A course graph sorted by four learned types and seven discipline levels
 <!--
+math1:Calculus，math2:Linear Algebra and Analytic Geometry，math3:Probability theory and mathematical statistics，math4:Complex Function and Integral Transformation，math5:Equations of Mathematics and Physics,math6:Stochastic Process,math7:Mathematical Methods in Finance
+phys1:College Physics，phys3:ATOMIC PHYSICS，phys2:Quantum Mechanics，phys4:Thermo Dynamics and Statistic Physics，phys5:Solid State Physics, phys6:Principle of Laser,
+eecs01:MATLAB Language and Its Applications,eecs0:Electrodynamics,eecs1:C Programming Language,eecs2:Electric Circuit，eecs3:Fundamentals of Analog Electronics，eecs4:Fundamentals of Digital Electronics，eecs5:Signals and Systems，eecs6:Digital Signal Processing，eecs7:Great Ideas in Computer Architecture,eecs8:Microcomputer Principle and Interface Technique,eecs9:Parallel processing and architecture,eecs10:Data Structure and Algorithms, eecs11:Computer Communication Network,eecs12:Digital Image Processing,eecs13:Sentiment computing of internet,eecs14:Intelligent Speech processing, eecs15:Artificial Intelligence: Principles and Techniques,eecs16:Convolutional Neural Networks for Visual Recognition, eecs17:Programming Methodology, eecs18:Machine Learning with Graph
+-->
+
+<!--
 ### Hi there 👋
 <div align="center"> 
 </div>
@@ -13,8 +19,7 @@ A course graph sorted by four learned types and seven discipline levels
 
 ![](https://github-readme-stats.vercel.app/api?username=MultiNet02&show_icons=true&theme=synthwave)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MultiNet02&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
--->
-<!--
+
 **MultiNet02/MultiNet02** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
