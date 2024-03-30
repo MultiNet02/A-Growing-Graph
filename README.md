@@ -1,4 +1,5 @@
-# MultiNet02.github.io
+A course graph sorted by four learned types and seven discipline levels
+<!--
 ### Hi there 👋
 <div align="center"> 
 </div>
@@ -12,7 +13,7 @@
 
 ![](https://github-readme-stats.vercel.app/api?username=MultiNet02&show_icons=true&theme=synthwave)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MultiNet02&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
-
+-->
 <!--
 **MultiNet02/MultiNet02** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
