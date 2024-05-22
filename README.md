@@ -1,5 +1,5 @@
 A course graph sorted by four learned types and seven discipline levels
-![image](/legend1.png) ![](/ledend2.png)
+![image](/Legend1.png) ![](/Ledend2.png)
 <!--
 math1:Calculus，math2:Linear Algebra and Analytic Geometry，math3:Probability theory and mathematical statistics，math4:Complex Function and Integral Transformation，math5:Equations of Mathematics and Physics,math6:Mathematical Methods in Finance,
 phys1:College Physics，phys3:ATOMIC PHYSICS，phys2:Quantum Mechanics，phys4:Thermo Dynamics and Statistic Physics，phys5:Principle of Laser,phys6:Introduction to Quantum Compution,phys7:Applied Optics, phy8:Physics Optics,
